@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;600&display=swap');
+
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body {
+        font-family: 'Teko', sans-serif;
+        background-color: rgb(56, 56, 56);
+  }
+
+.img-author {
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        max-height: 250;
+        float: right;
+}
+/* Boot CSS*/
+.center {
+        max-width: 1280px;
+        padding: 0 2%;
+        margin: 0 auto;
+}
+
+.w33 {
+        width: 33.3%;
+}
+
+.w50 {
+        padding: 0 10px;
+        width: 50%;
+}
+
+.left {
+        float:left;
+}
+
+.right {
+        float: right;
+}
+
+.clear {
+        clear: both;
+}
+
+/* ------------------Estilização-------------------- */
+
+/* ---------header---------*/
+header{
+        padding: 20px 0;
+        background-color: #020307;
+}
+
+header .logo {
+        font-size: 30px;
+       color: whitesmoke;
+       font-weight: 300;
+       text-transform: uppercase;
+}
+
+/* ---------nav---------*/
+.mobile {
+        display: none;
+}
+
+nav.desktop ul {
+        top: 6px;
+        position: relative;
+        list-style-type: none;
+}
+
+nav.desktop li {
+        font-weight: 300;
+        font-size: 20px;
+        padding: 0 30px;
+        text-transform: uppercase;
+        display: inline-block;
+}
+
+nav.desktop a{
+        color: whitesmoke;
+        text-decoration: none;
+}
+
+/* ---------banner-principal---------*/
+section.banner-principal {
+        width: 100%;
+        height: 600px;
+        background-image: url('../img/bg-form2.jpg');
+        background-size: cover;
+        position: relative;
+}
+
+.overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.753);
+        z-index: 1;
+}
+
+section.banner-principal form {
+        max-width: 500px;
+        z-index: 2;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform:translate(-50%, -50%);
+        -ms-transform:translate(-50%, -50%) ;
+}
+
+section.banner-principal form h2 {
+        color: whitesmoke;
+        font-weight: 500;
+        font-size: 30 px;
+        text-align: center;
+}
+
+ section.banner-principal form input[type=email]{ 
+         border-radius:4px;
+         -moz-border-radius:4px;
+         -webkit-border-radius:4px;
+         box-shadow: 1px 1px 2px #000000;
+         -moz-box-shadow: 1px 1px 2px #333333;
+         -webkit-box-shadow: 1px 1px 2px #333333;
+         background: #16063dd2;
+         border:1px solid #0c298a;
+         width:100%;
+         height: 50px;
+         text-align: center;
+         color: aliceblue;
+         font-size: 17px;
+        }
+
+        section.banner-principal form textarea{
+        border: 1px solid #000000;
+        background:#1e07ee;
+        width:150px;height:100px;
+        border-radius:4px;
+        -moz-border-radius:4px;
+        -webkit-border-radius:4px;
+        box-shadow: 1px 1px 2px #000000;
+        -moz-box-shadow: 1px 1px 2px #000000;
+        -webkit-box-shadow: 1px 1px 2px #000000;
+}
+
+section.banner-principal form input[type=text]:hover, textarea:hover{
+        background: #1a1919c5; 
+        border:1px solid #990000;
+}
+
+section.banner-principal form input[type=submit]{ 
+       background:#071647ec;
+       color:#ffffff;
+       width:100%;
+       height: 50px;
+       text-align: center;
+       margin-top: 10px;
+       border: 1px solid rgb(27, 27, 29);
+       box-shadow: 1px 1px 2px #000000;
+       border-radius:4px;
+}
+
+/* ---------descricao-autor"---------*/
+section.descricao-autor {
+        padding: 30px 0;
+        background-color: #04091bc0;
+}
+
+section.descricao-autor h2 {
+        font-size: 30px;
+        font-weight: 100;
+        color: rgb(228, 228, 228);
+      
+
+}
+
+section.descricao-autor p{
+        font-size: 20px;
+        font-weight: 300;
+        color: #a5ca96bb;
+        margin-top: 18px;
+}
+
+/* ---------especialidades---------*/
+section.especialidades {
+        padding: 40px 0;
+        background-color: #04091bc0;
+}
+
+section.especialidades h2.title {
+        font-size: 30px;
+        font-weight: 400;
+        color: rgb(228, 228, 228);
+        text-align: center;
+
+}
+
+.box-especialidades {
+        margin: 30px 0;
+
+}
+
+.box-especialidades h3 {
+        text-align: center;
+        color: #021966;
+        font-size: 40px;
+              
+}
+
+.box-especialidades h4 {
+        text-align: center;
+        color: #0000009d;
+        font-size: 40px;
+        font-weight: 100;
+        box-shadow: ;
+}
+
+.box-especialidades p {
+        padding: 20px;
+        color: #a5ca96bb;
+        font-size: 20px;
+       
+}
+
+footer {
+        background-color: #020307;
+}
+
+footer p {
+        color: #ffffff;
+        text-align: center;
+        font-weight: 400;
+        font-size: 20px;
+        height: 150px;
+}
+
+/* ---------responsive screens---------*/
+@media screen and (max-width: 700px){
+        nav.desktop{
+                display: none;
+        }
+        nav.mobile{
+                display: block;
+        }
+
+        .btn-mobile-menu {
+                color: white;
+                font-size: 30px;
+                cursor: pointer;
+        }
+
+        nav.mobile ul {
+                top: 95px;
+                z-index: 3;
+                position: absolute;
+                left: 0;                
+                display: none;
+                text-align: center;
+                width: 100%;
+        }
+        nav.mobile li {
+                font-weight: 300;
+                width: 100%;
+                display: block;
+                background-color: white;
+                border-bottom: 1px solid #0c298a;
+                padding: 8px 0;
+                font-size: 17px;
+        }
+        nav.mobile li a{
+                display: block;
+                color: rgba(36, 3, 3, 0.808);
+                text-decoration: none;
+        }
+}
+
+
+
+@media screen and (max-width: 760px){
+        img{
+                float: none !important;
+                display: block;
+                margin: 0 auto;
+                
+        }
+        .w50{
+                padding: 20px;
+                width: 100%;
+        }
+
+        .w33 {
+                width: 100%;
+                padding: 20px;
+        }
+
+        .box-especialidades {
+                margin: 0;
+        }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px){
+        .box-especialidades p {
+                padding: 10px;
+        }
+}
